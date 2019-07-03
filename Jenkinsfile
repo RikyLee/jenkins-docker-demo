@@ -9,7 +9,7 @@ pipeline {
         string(name: 'DOCKER_IMAGE', defaultValue: 'test/jenkins-docker-demo', description: 'docker镜像名')
         string(name: 'APP_NAME', defaultValue: 'jenkins-docker-demo', description: 'k8s中标签名')
         string(name: 'K8S_NAMESPACE', defaultValue: 'jenkins-test', description: 'k8s的namespace名称')
-        string(name: 'DOCKER_IMAGE_TAG', defaultValue: '1.0', description: 'docker-image-tag')
+        string(name: 'DOCKER_IMAGE_TAG', defaultValue: '2.0', description: 'docker-image-tag')
     }
     stages {
         stage('Maven Build') {
